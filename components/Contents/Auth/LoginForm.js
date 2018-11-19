@@ -99,7 +99,7 @@ class LoginForm extends Component {
                             <div className="btn form-box">
                                 <span>Không có tài khoản? </span>
                                 <Link href="./sign-up">
-                                    <button id="btn-sign- up" type="button">Đăng Ký</button>
+                                    <button id="btn-sign-up" type="button">Đăng Ký</button>
                                 </Link>
                             </div>
                         </form>

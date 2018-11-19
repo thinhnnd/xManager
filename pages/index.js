@@ -7,14 +7,14 @@ import HeaderBar from '../components/Header/HeaderBar';
 const Home = () => (
   <div className="container">
     <Layout>
-      <HeaderBar >
-        <Link href='/verification/login'>
-          <a>Login</a>
-        </Link>
-      </HeaderBar>
       <div className="show-case">
-        <h1>Phần mềm quản lý XManager</h1>
+        <div class="main-intro">
+          <div className="img-wrpr">
+            <img src="https://smart-school.in/wp-content/themes/smartschool/assets/img/features.png" />
+          </div>
+        </div>
       </div>
+
     </Layout>
   </div>
 )

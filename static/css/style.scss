@@ -203,7 +203,7 @@ ul.nav-top ul.user-setting {
 }
 
 .card-wrpr-header{
-    padding: .75rem 1.25rem;
+    padding: .05rem 1rem;
     margin-bottom: 0;
     background-color: #f0f3f5;
     border-bottom: 1px solid #c8ced3;
@@ -220,6 +220,10 @@ ul.nav-top ul.user-setting {
     margin: auto;
 }
 
+h5.title{ 
+    margin: 10px 0;
+}
+
 /* show-case */
 
 .show-case {
@@ -227,7 +231,15 @@ ul.nav-top ul.user-setting {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.main-intro .img-wrpr{
+    width: 540px;
+    height: 500px;
+}
+
+.img-wrpr img {
+    width: 100%;
 }
 
 
@@ -256,7 +268,7 @@ ul.nav-top ul.user-setting {
     line-height: 1.5;
     color: #666666;
     background: #e6e6e6;
-    height: 50px;
+    height: 40px;
     border-radius: 5px;
     outline: none;
     border: none;
@@ -300,7 +312,7 @@ form.login-form {
     line-height: 1.5;
     color: #fff;
     background: #20A8D8;
-    height: 50px;
+    height: 40px;
     border-radius: 5px;
     outline: none;
     border: none;
@@ -308,7 +320,139 @@ form.login-form {
     cursor: pointer;
 }
 
+.btn button#btn-sign-up {
+    background-color: #666666;
+}
 
+/* usser-profile */
+.user-profile {
+    display: flex;
+}
+
+.user-profile > div:first-child {
+    width: 30%;
+}
+.user-profile > div:nth-child(2) {
+    width: 70%;
+}
+
+.avatar .usr-pro-name {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #20A8D8;
+}
+
+.up-right {
+    position: relative;
+}
+
+.contact-info {
+}
+
+button.b-btn {
+    border: none; 
+    padding: 5px;
+    border: 4px;
+    cursor: pointer;
+}
+
+button.b-btn-blue {
+    background: #20A8D8;
+    color: #fff;
+}
+
+.up-right .b-btn-blue {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* Check-in */
+table.list-check-in {
+    width: 100%;
+    text-align: center;
+}
+table.list-check-in,
+table.list-check-in th, 
+table.list-check-in td{
+    border: 1px solid #2F353A;
+    border-collapse: collapse;
+}
+
+table.list-check-in tbody td {
+    height: 20px;
+}
+
+table.list-check-in thead th {
+    height: 25px;
+    background: #2F353A;
+    color: #fff;
+}
+
+.btn-checkin {
+    margin-right: 5px;
+    color: #fff;
+    background-color: #0078D7;
+    padding: 0 4px;
+}
+
+.btn-checkin#btn-online-check {
+    background: #0DBC79;
+}
+.btn-checkin#btn-offline-check {
+    background: #F86C6B;
+}
+.btn-checkin#btn-online-plus {
+    background: rgb(250, 171, 2);
+}
+
+.btn-checkin:hover {
+    cursor: pointer;
+}
+/*dashboard*/
+
+.counter {
+    display: flex;
+}
+
+.brick-info {
+    background: #0078D7;
+    color: #fff;
+    width: 23%;
+    padding: 2% 4px;
+    margin: 8px;
+}
+
+.brick-info .up{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.brick-info .down{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.bc-orange {
+    background-color: #FF8A65;
+}
+
+.bc-green {
+    background-color: #4DB6AC;
+}
+
+.bc-pink {
+    background-color: #F06292;
+}
+
+.bc-violet {
+    background-color: #9575CD;
+}
 
 @media only screen and (max-width: 768px) {
     .app-main > .menu {
@@ -381,6 +525,13 @@ form.login-form {
 .ml-0 {
     margin-left: 0 !important;
     transition: 1s;
+}
+.mt-15 {
+    margin-top: 15px !important;
+}
+
+.pl-40 {
+    padding-left: 80px;
 }
 
 .transition {

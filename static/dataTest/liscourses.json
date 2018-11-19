@@ -1,0 +1,45 @@
+[
+    {
+        "courseID": "NT005.J11",
+        "name": "Hệ thống nhúng, mạng không dây",
+        "time": "Tiết 1, 2, 3 Thứ 5",
+        "room": "C211"
+    },
+    {
+        "courseID": "NT005.J11",
+        "name": "Hệ thống nhúng, mạng không dây",
+        "time": "Tiết 1, 2, 3 Thứ 5",
+        "room": "C211"
+    },
+    {
+        "courseID": "NT001.J12",
+        "name": "Quản trị mạng và hệ thống",
+        "time": "Tiết 1, 2, 3 Thứ 6",
+        "room": "C211"
+    },
+    {
+        "courseID": "NT004.J11",
+        "name": "An toàn mạng máy tính",
+        "time": "Tiết 1, 2, 3 Thứ 5",
+        "room": "C211"
+    },
+   {
+        "courseID": "NT005.J11",
+        "name": "Nhập môn mạng máy tính",
+        "time": "Tiết 6, 7, 8 Thứ 2",
+        "room": "C114"
+    },
+    {
+        "courseID": "NT005.J11",
+        "name": "Hệ thống nhúng, mạng không dây",
+        "time": "Tiết 1, 2, 3 Thứ 2",
+        "room": "C113"
+    },
+    {
+        "courseID": "NT005.J11",
+        "name": "Hệ thống nhúng, mạng không dây",
+        "time": "Tiết 1, 2, 3 Thứ 4",
+        "room": "C213"
+    }
+
+]

@@ -18,6 +18,9 @@ class MainPage extends React.Component {
                         thinhdnnd
                     </HeaderBar>
                     <SideBar rights={rights} />
+                    <div className="content">
+                        {this.props.children}
+                    </div>
                 </Layout>
             </div>
         );

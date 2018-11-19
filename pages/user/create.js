@@ -1,16 +1,17 @@
 import React from 'react';
 import Link from 'next/link';
 import MinifiedHeader from '../../components/Header/MinifiedHeader';
-import LoginForm from '../../components/Contents/Auth/LoginForm'
 import Layout from '../../components/layouts';
+import SignUpForm from '../../components/Contents/Auth/SignUpForm';
 
-class LoginPage extends React.Component {
+class Create extends React.Component {
     render() {
         return (
             <div className="container">
                 <Layout>
+                    <MinifiedHeader />
                     <div className="show-case">
-                        <LoginForm />
+                        <SignUpForm />
                     </div>
                 </Layout>
             </div>
@@ -18,4 +19,4 @@ class LoginPage extends React.Component {
     }
 }
 
-export default LoginPage;
+export default Create;
