@@ -1,0 +1,398 @@
+body, html {
+    width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    position: fixed;
+    height: 55px;
+    background: #fff;
+    border-bottom: 1px solid #0078D7;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    align-items: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+.justify-space-center {
+    justify-content: center;
+}
+
+
+.header .my-logo {
+    color: #20A8D8;
+    font-size: 28px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 700;
+    padding-left: 18px;
+    user-select: none;
+}
+
+.header .my-logo:hover {
+    cursor: pointer;
+}
+
+.header .my-logo .x-logo {
+    color: #F86C6B;
+}
+
+.header .left-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-bar .btn{
+    font-size: 22px;
+    color: #8F9091;
+}
+
+.left-bar #btn-nav{
+    margin-left: 50px;
+}
+.left-bar #btn-nav:hover{
+    cursor: pointer;
+}
+
+.status-bar {
+    margin-right: 18px;
+}
+
+
+ul.nav-top {
+    list-style-type: none;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul.nav-top >li {
+    padding: 5px 10px;
+}
+
+
+ul.nav-top >li:hover{
+    cursor: pointer;
+}
+
+ul.nav-top >li:nth-of-type(1) {
+    order: 1;
+}
+
+ul.nav-top .usr-avatar {
+    width: 35px;
+    height: 35px;
+    background-color: #20A8D8;
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 7px 10px;
+    color: #fff;
+}
+
+ul.nav-top > li.user-area {
+    position: relative;
+}
+
+ul.nav-top > li.user-area:hover .user-setting {
+    display: block;
+}
+
+ul.nav-top .user-setting {
+    display: none;
+    position: absolute;
+    background: #8F9091;
+    right: 10%;
+    top: 100%;
+    width: 100%;
+}
+
+ul.nav-top .user-setting li {
+    padding: 5px 10px;
+    color: #fff;
+}
+
+ul.nav-top ul.user-setting {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* body content */
+.app-main{ 
+    display: flex;
+    margin-top: 55px;
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    z-index: 1;
+    background: #e5e5e5;
+    height: calc(100vh - 55px);
+}
+
+
+.app-main > .menu {
+    height: 100%;
+    width: 220px;
+    background-color:  #2F353A;
+    color: #fff;
+    position: fixed;
+    top: 55px;
+    left: 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.menu ul li {
+    padding: 10px 15px;
+}
+
+.menu ul li i {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+
+.menu ul li:hover {
+    background-color: #20A8D8;
+    cursor: pointer;
+}
+
+
+/*content*/
+.content {
+    margin-left: 220px;
+    min-width: 0;
+    padding: 0 15px;
+    width: 100%;
+    transition: 1s;
+}
+
+// /* card definition */
+.card-wrpr {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #c8ced3;
+    border-radius: .25rem;
+}
+
+.card-wrpr-header{
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #f0f3f5;
+    border-bottom: 1px solid #c8ced3;
+}
+
+.card-wrpr-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.account-bubble {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* show-case */
+
+.show-case {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+// /*form */
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box{
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-box input{
+    width: 100%;
+}
+
+.form-box input{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #666666;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    overflow: invisible;
+    padding: 0 5px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.form-box input:focus {
+    border: 1px solid #20A8D8;
+}
+
+form.login-form {
+    width: 290px;
+}
+
+.form-box .account-icon {
+    font-size: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    pointer-events: none;
+    color: #666666;
+}
+
+.btn button{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #fff;
+    background: #20A8D8;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .app-main > .menu {
+        z-index: 1000;
+    }
+    
+    .content {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    
+.left-bar .btn{
+    order: -1;
+}
+
+.left-bar .my-logo{
+    margin-left: auto;
+}
+
+
+.left-bar #btn-nav{
+    margin-left: 15px;
+}
+
+
+.status-bar {
+    margin-left: 18px;
+}
+
+.nav-top > li:nth-child(1) .usr-name {
+    display: none;
+} 
+
+.nav-top > li:nth-child(3), .nav-top > li:nth-child(2){
+    display: none;
+}
+}
+
+
+/* special class */
+
+.align-self-center {
+    align-self: center;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden-slide {
+    left: -220px!important;
+    transition: 1s;
+}
+
+.showing-slide {
+    transition: 1s;
+    left: 0 !important;
+}
+
+.ml-0 {
+    margin-left: 0 !important;
+    transition: 1s;
+}
+
+.transition {
+    transition: 1s;
+}
+/*next*/
+#__next {
+    height: 100%;
+    .login-body{ 
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+}
